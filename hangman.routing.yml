@@ -1,0 +1,7 @@
+hangman.page_form:
+  path: '/hangman'
+  defaults:
+    _form: '\Drupal\hangman\Form\Playground'
+    _title: 'Hangman'
+  requirements:
+    _permission: 'access content'

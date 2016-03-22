@@ -1,0 +1,4 @@
+services:
+  plugin.manager.hangman:
+    class: Drupal\hangman\HangmanPluginManager
+    arguments: ['@container.namespaces', '@module_handler', '@cache.default']

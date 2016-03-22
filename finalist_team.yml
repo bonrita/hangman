@@ -1,0 +1,19 @@
+robin_words:
+  label: 'Robin'
+  image: 'http://i.telegraph.co.uk/multimedia/archive/03003/RWPortrait_3003227b.jpg'
+  words:
+    - matter
+    - jazz
+    - rhythm
+    - agree
+    - party
+    - madness
+
+steve_words:
+  label: 'Steve'
+  image: 'http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/04/11/101576653-Steve-jobs-illustration.530x298.jpg'
+  words:
+    - intuition
+    - karma
+    - yardstick
+    - destination
