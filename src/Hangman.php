@@ -65,6 +65,7 @@ class Hangman extends HangmanBase {
    * {@inheritdoc}
    */
   public function initializeGame() {
+
     // Randomly pick a word.
     $word_to_guess = $this->randomlyPickItemFromList($this->listOfItems);
     $this->setCurrentItemToGuess($word_to_guess);
@@ -112,13 +113,8 @@ class Hangman extends HangmanBase {
    */
   public function generateItemPlaceholder($word) {
     $style = $this->getPlaceholderString();
-    $wordlength = strlen($word);
-    $placeholder = "";
-
-    for ($i = 0; $i < $wordlength; $i++) {
-      $placeholder = "" . $placeholder . $style;
-    }
-
+    $word_count = strlen($word);
+    $placeholder = str_repeat($style, $word_count);
     return $placeholder;
   }
 
