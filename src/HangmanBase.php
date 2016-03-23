@@ -90,6 +90,8 @@ abstract class HangmanBase extends Game implements HangmanInterface {
    * Set the character placeholder string.
    *
    * @param string $placeholderString
+   *
+   * @return \Drupal\hangman\HangmanInterface
    */
   public function setPlaceholderString($placeholderString) {
     $this->placeholderString = $placeholderString;
@@ -110,6 +112,8 @@ abstract class HangmanBase extends Game implements HangmanInterface {
    * Set generated placeholder that will be displayed on screen.
    *
    * @param string $generatedPlaceholder
+   *
+   * @return \Drupal\hangman\HangmanInterface
    */
   public function setGeneratedPlaceholder($generatedPlaceholder) {
     $this->generatedPlaceholder = $generatedPlaceholder;
@@ -129,6 +133,8 @@ abstract class HangmanBase extends Game implements HangmanInterface {
    * Set the current word to guess.
    *
    * @param string $current_word_to_guess
+   *
+   * @return \Drupal\hangman\HangmanInterface
    */
   public function setCurrentItemToGuess($current_word_to_guess) {
     $this->currentItemToGuess = $current_word_to_guess;
@@ -149,6 +155,8 @@ abstract class HangmanBase extends Game implements HangmanInterface {
    * Set the list of words to be guessed.
    *
    * @param array $Items_list
+   *
+   * @return \Drupal\hangman\HangmanInterface
    */
   public function setListOfItems($Items_list) {
     $this->listOfItems = $Items_list;

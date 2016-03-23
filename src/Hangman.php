@@ -102,6 +102,8 @@ class Hangman extends HangmanBase {
    * Sets the current word array.
    *
    * @param array $word_array
+   *
+   * @return \Drupal\hangman\HangmanInterface
    */
   public function setWordToGuessArray($word_array) {
     $this->wordToGuessArray = $word_array;
@@ -199,6 +201,8 @@ class Hangman extends HangmanBase {
    * Set the current character guessed by the player.
    *
    * @param string $currentGuessedXracter
+   *
+   * @return \Drupal\hangman\HangmanInterface
    */
   public function setCurrentGuessedXracter($currentGuessedXracter) {
     $this->currentGuessedXracter = $currentGuessedXracter;
@@ -207,6 +211,8 @@ class Hangman extends HangmanBase {
 
   /**
    * Generate or set a thank you message for the winning player.
+   *
+   * @return \Drupal\hangman\HangmanInterface
    */
   protected function processWinningResults() {
     if ($this->getGeneratedPlaceholder() == $this->getCurrentItemToGuess()) {
@@ -220,8 +226,10 @@ class Hangman extends HangmanBase {
   }
 
   /**
-   *  Incase the player wasn't lucky enough to make any matches.
-   *  Notify him of the loss.
+   * Incase the player wasn't lucky enough to make any matches.
+   * Notify him of the loss.
+   *
+   * @return \Drupal\hangman\HangmanInterface
    */
   protected function processTheLossersMessage() {
     if ($this->isCharacterGuessed == FALSE) {
